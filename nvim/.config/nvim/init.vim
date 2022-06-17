@@ -25,8 +25,9 @@ Plug 'sbdchd/neoformat'
 
 Plug 'mbbill/undotree'
 
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive' " git power over 9000
 
+Plug 'chrisbra/vim-commentary' " use 'gc' to comment / uncomment text-blocks
 
 call plug#end()
 
