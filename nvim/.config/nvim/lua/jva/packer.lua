@@ -24,6 +24,8 @@ return require('packer').startup(function(use)
     -- Undo
     use("mbbill/undotree")
 
+    -- Uncomment
+    use("tpope/vim-commentary")
 
     -- LSP
     use("neovim/nvim-lspconfig")
@@ -32,7 +34,6 @@ return require('packer').startup(function(use)
     use("hrsh7th/cmp-path")
     use("hrsh7th/cmp-cmdline")
     use("hrsh7th/nvim-cmp")
-    use("tzachar/cmp-tabnine", { run = "./install.sh" }) -- auto completion
     use("onsails/lspkind-nvim") -- vsc like pictogramm popup
     use("nvim-lua/lsp_extensions.nvim") -- inlay hints
     use("glepnir/lspsaga.nvim")
@@ -41,4 +42,8 @@ return require('packer').startup(function(use)
     -- Snippets?
 
     -- Debugging?
+    use("mfussenegger/nvim-dap")
+    use("rcarriga/nvim-dap-ui")
+    use("theHamsta/nvim-dap-virtual-text")
+    use("mfussenegger/nvim-dap-python")
 end)
