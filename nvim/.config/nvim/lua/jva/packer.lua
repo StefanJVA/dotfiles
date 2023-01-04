@@ -1,49 +1,43 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+-- vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+  use {
+	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use('nvim-treesitter/playground')
+  use('theprimeagen/harpoon')
+  use('mbbill/undotree')
+  use('tpope/vim-fugitive')
 
-     -- Telescope (fuzzy finding)
-    use("nvim-lua/plenary.nvim")
-    use("nvim-lua/popup.nvim")
-    use("nvim-telescope/telescope.nvim")
+  use {
+  'VonHeikemen/lsp-zero.nvim',
+  requires = {
+    -- LSP Support
+    {'neovim/nvim-lspconfig'},
+    {'williamboman/mason.nvim'},
+    {'williamboman/mason-lspconfig.nvim'},
 
-    -- Colorscheme
-    use("gruvbox-community/gruvbox")
+    -- Autocompletion
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-buffer'},
+    {'hrsh7th/cmp-path'},
+    {'saadparwaiz1/cmp_luasnip'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/cmp-nvim-lua'},
 
-    -- Treesitter
-    use("nvim-treesitter/nvim-treesitter", {
-        run = ":TSUpdate"
-    })
-    use("romgrk/nvim-treesitter-context")
+    -- Snippets
+    {'L3MON4D3/LuaSnip'},
+    {'rafamadriz/friendly-snippets'},
+  }
+}
 
-    -- Undo
-    use("mbbill/undotree")
 
-    -- Uncomment
-    use("tpope/vim-commentary")
-
-    -- LSP
-    use("neovim/nvim-lspconfig")
-    use("hrsh7th/cmp-nvim-lsp") -- Completion engine cmp
-    use("hrsh7th/cmp-buffer")
-    use("hrsh7th/cmp-path")
-    use("hrsh7th/cmp-cmdline")
-    use("hrsh7th/nvim-cmp")
-    use("onsails/lspkind-nvim") -- vsc like pictogramm popup
-    use("nvim-lua/lsp_extensions.nvim") -- inlay hints
-    use("glepnir/lspsaga.nvim")
-    use("simrat39/symbols-outline.nvim") -- tree like view for variables
-
-    -- Snippets?
-
-    -- Debugging?
-    use("mfussenegger/nvim-dap")
-    use("rcarriga/nvim-dap-ui")
-    use("theHamsta/nvim-dap-virtual-text")
-    use("mfussenegger/nvim-dap-python")
 end)
