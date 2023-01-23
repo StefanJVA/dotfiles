@@ -1,4 +1,8 @@
-local builtin = require("telescope.builtin")
+local setup, builtin = pcall(require, "telescope.builtin")
+if not setup then
+  return
+end
+
 
 local telescope = require('telescope')
 telescope.setup {
