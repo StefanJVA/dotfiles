@@ -19,7 +19,6 @@ return require('packer').startup(function(use)
   use('tpope/vim-surround')
   use('tpope/vim-commentary')
   use('lewis6991/gitsigns.nvim')
-  use('christoomey/vim-tmux-navigator')
 
   use {
     'VonHeikemen/lsp-zero.nvim',
