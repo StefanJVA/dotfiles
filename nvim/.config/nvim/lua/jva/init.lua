@@ -1,4 +1,4 @@
-require("jva.remap")
-require("jva.set")
-require("jva.packer")
+require("jva.keymap")
+require("jva.options")
+require("jva.lazy")
 
