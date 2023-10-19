@@ -12,3 +12,7 @@ fdd() {
   fd
 }
 
+fdnvim() {
+  cd ~/dotfiles/nvim/.config/nvim
+  nvim .
+}
