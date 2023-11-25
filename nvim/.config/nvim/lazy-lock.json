@@ -14,6 +14,7 @@
   "mason.nvim": { "branch": "main", "commit": "cd7835b15f5a4204fc37e0aa739347472121a54c" },
   "nvim": { "branch": "main", "commit": "f03cbfb65664e55451d91616242bd1c63919da10" },
   "nvim-cmp": { "branch": "main", "commit": "5dce1b778b85c717f6614e3f4da45e9f19f54435" },
+  "nvim-dap-python": { "branch": "master", "commit": "e0be843877e7ae756ef1ee7a441ca0b9e1677da9" },
   "nvim-lint": { "branch": "master", "commit": "6d596b87862909370f4d1e6535cc9fad80c89fe6" },
   "nvim-lsp-file-operations": { "branch": "master", "commit": "0ae13ac58136c6175638b6e1ba04cb487dd22272" },
   "nvim-lspconfig": { "branch": "master", "commit": "2a101fb00e6f6eb29c230736b99f05c3b3192b94" },
@@ -22,6 +23,7 @@
   "plenary.nvim": { "branch": "master", "commit": "50012918b2fc8357b87cff2a7f7f0446e47da174" },
   "telescope.nvim": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" },
   "undotree": { "branch": "master", "commit": "0e11ba7325efbbb3f3bebe06213afa3e7ec75131" },
+  "venv-selector.nvim": { "branch": "main", "commit": "c259dacb20a00fb84ec6006e9a24b4085b27120a" },
   "vim-commentary": { "branch": "master", "commit": "e87cd90dc09c2a203e13af9704bd0ef79303d755" },
   "vim-fugitive": { "branch": "master", "commit": "cbe9dfa162c178946afa689dd3f42d4ea8bf89c1" }
 }
