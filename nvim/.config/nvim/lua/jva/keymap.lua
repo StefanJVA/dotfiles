@@ -30,5 +30,17 @@ vim.keymap.set("n", "<leader>qk", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>qh", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>ql", "<cmd>lprev<CR>zz")
 
+-- resize window
+vim.keymap.set("n", "<leader>=", [[<cmd>vertical resize +10<cr>]]) -- vertical bigger
+vim.keymap.set("n", "<leader>-", [[<cmd>vertical resize -10<cr>]]) -- vertical smaller
+vim.keymap.set("n", "<leader>+", [[<cmd>horizontal resize +10<cr>]]) -- horizontal bigger
+vim.keymap.set("n", "<leader>_", [[<cmd>horizontal resize -10<cr>]]) -- horizontal smaller
+
+-- move between windows
+vim.keymap.set("n", "<Left>", "<C-w>h")
+vim.keymap.set("n", "<Right>", "<C-w>l")
+vim.keymap.set("n", "<Down>", "<C-w>j")
+vim.keymap.set("n", "<Up>", "<C-w>k")
+
 -- replace word under the cursor
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
